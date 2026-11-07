@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: .3s;
+}
+
+body, html {
+    height: 100%;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: #dfdfdf;
+}
+
+a {
+    color: black;
+}
+
+header {
+    display: flex;
+    padding: 5px;
+    height: 7vh;
+    width: auto;
+    align-items: center;
+    padding-right: 40px;
+    justify-content: end;
+}
+
+.justButton {
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 115px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    outline: none;
+}
+
+.gradient0 {
+    background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+    background-size: 600%;
+    animation: animeButton 10s linear infinite;
+    color: white;
+}
+
+.gradient1 {
+    background: linear-gradient(-45deg, #ff5959, #ffbb3f,  #f1de00, #7cff7c, lightblue, #7d8dff, #ff61ff);
+    background-size: 600%;
+    animation: animeButton 15s linear infinite;
+    color: white;
+}
+
+.gradient2 {
+    outline: 1px solid #53ff8b;
+    background: white;
+}
+
+.playContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+}
+
+.playButton {
+    margin-bottom: 15vh;
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 45px;
+    background: #ffd9a7;
+    font-size: 50px;
+    color: white;
+}
+
+.playmenu {
+    width: 1200px;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.game {
+    width: 400px;
+    height: 500px;
+    background: white;
+    box-shadow: 0px 0px 7px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 54px;
+}
+
+.fa-solid {
+    font-size: 100px;
+}
+
+.fadeOut {
+    animation: fade 1s linear;
+}
+
+.fadeIn {
+    animation: fadeIn 1s linear;
+}
+
+.justButton:hover {
+    box-shadow: 0px 3px 7px 0px black;
+    cursor: pointer;
+}
+
+.justButton:active {
+    cursor: pointer;
+    transition: .1s;
+    height: 38px;
+    width: 113px;
+    margin-right: 1px;
+}
+
+.playButton:hover {
+    box-shadow: 0px 3px 7px 0px black;
+    cursor: pointer;
+}
+
+.game:hover {
+    color: lightblue;
+    box-shadow: 0px 0px 20px black;
+}
+
+@keyframes fade {
+    50% {
+        margin-top:  20px;
+        filter: blur(2px);
+        opacity: 40%;
+    }
+    
+    100% {
+        margin-top: 40px;
+        opacity: 0%;
+    }
+    
+}
+
+@keyframes fadeIn {
+    50% {
+        margin-top: 20px;
+        opacity: 60%;
+        filter: blur(2px);
+    }
+    
+    100% {
+        margin-top: 0px;
+        opacity: 100%;
+        filter: none;
+    }
+}
+
+@keyframes animeButton {
+    0% {
+        background-position: 0% 95%;
+    }
+    
+    50% {
+        background-position: 95% 100%;
+    }
+    
+    100% {
+        background-position: 0% 95%;
+    }
+}

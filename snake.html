@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Змейка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        body {
+            background: 
+        }
+        
+        .menuButton {
+            width: 150px;
+            padding: 15px;
+            margin: 10px;
+            color: white;
+            background: #122231;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .menuButton:hover {
+            background: #234667;
+        }
+
+        #game {
+            border-collapse: collapse;
+            margin: 2% auto;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #score {
+            text-align: center;
+            font-size: 46px;
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        #score:after {
+            content: '/15';
+        }
+
+        .cell {
+            width: 20px;
+            height: 20px;
+            border: 1px dotted #9f9f9f;
+            border-collapse: collapse;
+        }
+
+        .food {
+            background: #1d9ec5;
+        }
+
+        .snakeBody {
+            background: lightgreen;
+        }
+
+        .snakeHead {
+            background: red;
+        }
+
+        .disabled {
+            background: grey;
+        }
+
+        .disabled:hover {
+            background: #a6a6a6;
+        }
+
+    </style>
+    <link rel="shortcut icon" href="img/5845cd430b2a3b54fdbaecf8.png">
+</head>
+
+<body>
+    <div id="game-wrap">
+        <p id="score"></p>
+        <table id="game"></table>
+    </div>
+    <div id="menu">
+        <div id="playButton" class="menuButton">Старт</div>
+        <div id="newGameButton" class="menuButton">Новая игра</div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+
+</html>

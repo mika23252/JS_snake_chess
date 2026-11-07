@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шахматы</title>
+    <link rel="stylesheet" href="board.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body style="height: 100vh; display: flex; align-items: center;">
+    <div class="gameWindow">
+        <div class="eatenFigures">
+            <div class="eatenFiguresBlock" id="whiteEatenFigures"></div>
+            <div class="eatenFiguresBlock" id="blackEatenFigures"></div>
+        </div>
+        <table id="board" align="center"></table>
+        <div class="moveHistory"></div>
+        <div style="width: 1038px">
+            <div style="flex-direction: row;width: 500px;justify-content: space-around;">
+                <div style="font-size: 22px; justify-content: space-around;">
+                    <p>Белые</p>
+                    <p id="whiteTime"></p>
+                </div>
+                <div style="font-size: 22px; justify-content: space-around;">
+                    <p>Черные</p>
+                    <p id="blackTime"></p>
+                </div>
+
+            </div>
+            <input type="button" onclick="game.init()" value="Заново" class="reloadButton">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/6e92bf5115.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!--
+      на случай если нужно показать различие var и let
+       <script>
+        function showPodcast() {
+            //Вызовем переменную перед её объявлением
+            best_podcast = 'people and code';
+            if (false) {
+                var best_podcast;
+            }
+            console.log(best_podcast);
+        }
+
+        showPodcast();
+    </script>-->
+</body>
+
+</html>
